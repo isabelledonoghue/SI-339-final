@@ -44,17 +44,6 @@ img:hover {
     animation: fadeBorderColor 2s infinite;
 }
 
-.recipe-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 30px;
-    margin: 0;
-    padding: 30px;
-    background-color:#2f035e;
-    color:#cfc1de;
-}
-
 .instructions {
     list-style-type: decimal;
 }
@@ -68,6 +57,13 @@ img:hover {
 .gallery-header {
     padding: 0;
     margin: 0;
+}
+
+.recipe-grid {
+    margin: 0;
+    padding: 30px;
+    background-color:#2f035e;
+    color:#cfc1de;
 }
 
 .main-image {
@@ -138,6 +134,17 @@ img:hover {
         background-color: #2f035e;
         color: #cfc1de;
         padding: 10px;
+    }
+
+    .recipe-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 30px;
+        margin: 0;
+        padding: 30px;
+        background-color:#2f035e;
+        color:#cfc1de;
     }
 
     .main-image {
@@ -218,4 +225,8 @@ img:hover {
     0% { border-color: #cfc1de; }
     50% { border-color: #2f035e; }
     100% { border-color: #cfc1de; }
+}
+
+@media only screen and (min-width: 1024px) {
+    
 }
