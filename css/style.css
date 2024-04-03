@@ -44,6 +44,25 @@ img:hover {
     animation: fadeBorderColor 2s infinite;
 }
 
+.button {
+    display: block;
+    width: 90%;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #cfc1de;
+    background-color: #2f035e;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #cfc1de;
+    color: #2f035e;
+    border: 5px solid #2f035e;
+}
+
 .instructions {
     list-style-type: decimal;
 }
@@ -64,6 +83,11 @@ img:hover {
     padding: 30px;
     background-color:#2f035e;
     color:#cfc1de;
+}
+
+.recipe-grid .button {
+    background-color:#cfc1de;
+    color:#2f035e;
 }
 
 .main-image {
@@ -139,6 +163,7 @@ img:hover {
     .recipe-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
         grid-column-gap: 10px;
         grid-row-gap: 30px;
         margin: 0;
